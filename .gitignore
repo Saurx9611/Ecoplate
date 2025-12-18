@@ -1,0 +1,31 @@
+# --- Dependencies (Don't upload these!) ---
+node_modules/
+package-lock.json # Optional: Some teams commit this, but for solo projects, it's fine to ignore if you want cleaner diffs. Usually better to keep it, but node_modules MUST go.
+# actually, keep package-lock.json usually. Let's remove it from ignore list below to be standard. 
+
+# --- Dependencies ---
+node_modules/
+
+# --- Security (NEVER upload these) ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Build Outputs (React/Vite creates these) ---
+dist/
+build/
+
+# --- Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
+
+# --- IDE Settings (Optional) ---
+.vscode/
+.idea/
